@@ -7,8 +7,7 @@
     <version>0.1.0</version>
     <packaging>pom</packaging>
     <modules>
-        <module>datagpt-web</module>
-        <module>datagpt-core</module>
+        <module>core</module>
     </modules>
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -105,7 +104,12 @@
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${jacoco.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.34</version>
+                <scope>provided</scope>
+            </dependency>
             <!--木兰宽松协议-->
             <dependency>
                 <groupId>org.dromara.hutool</groupId>
