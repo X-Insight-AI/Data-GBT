@@ -2,6 +2,7 @@ package io.datagpt.web.common.request;
 
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
 
 /**
  * [简要描述类用途]
@@ -28,5 +29,9 @@ public class BaseRequest {
 
     @Schema(description = "请求签名", hidden = true)
     private String signature;
+
+    @Schema(description = "用户Id")
+    private String userId;
+
 
 }
